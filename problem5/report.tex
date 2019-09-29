@@ -1,0 +1,29 @@
+\documentclass{report}
+\begin{document}
+\title{Runtime report}
+\author{W.Raja Vikram Bhatt\\
+	M.Tech(Research)\\		
+	Computational Science}
+\date{\today}
+\maketitle
+\begin{enumerate}
+\item
+\begin{tabular}{|c|c|c|}
+\hline
+Damping factor & k & $||e||_{\inf}$\\
+\hline
+$\omega = 1$ & 1 & 0.985055\\
+$\omega = 1$ & 3&0.873408\\
+$\omega = 1$ &10& 0.2381\\
+$\omega = 1$ &64 & 0.00325783\\
+\hline
+$\omega = 1.9$ &1&0.759505\\
+$\omega =1.9$ &3& 0.217789\\
+$\omega =1.9$ &10&0.0346207\\
+$\omega =1.9$ &64& 0.00732787\\ 
+\hline
+\end{tabular}
+\par
+Above table shows the result for various parameter combinations of $\omega \in\{1,1.9\}$ and $k\in\{1,3,10,64\}$. We can notice the gradual decrease of error in higher Fourier modes, due to rapid oscialltary nature of initial approximation.
+\end{enumerate}
+\end{document}
